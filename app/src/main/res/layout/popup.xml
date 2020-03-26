@@ -10,6 +10,7 @@
         android:layout_height="91dp"
         android:layout_weight="1"
         android:drawableLeft="@drawable/ic_rubbish_bin"
+        android:onClick="deleteSong"
         android:paddingLeft="20dp"
         android:paddingRight="230dp"
         android:text="Xóa bài hát" />
