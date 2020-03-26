@@ -45,7 +45,7 @@ public class WelcomeActivity extends AppCompatActivity {
         if (!isHaveEnoughPermission) {
             showConfirmDialog(this, listPermission);
         } else {
-//            nextActivity();
+         nextActivity();
     }
     }
 
@@ -57,16 +57,16 @@ public class WelcomeActivity extends AppCompatActivity {
                     Toast.makeText(this, "Không đủ quyền truy cập, ứng dụng tự động thoát", Toast.LENGTH_LONG).show();
                     finish();
                 } else {
-//                    nextActivity();
+                    nextActivity();
                 }
             }
         }
     }
 
     // go to main activity if have enough permission
-//    public void nextActivity() {
-//        startActivity(new Intent(this, MainActivity.class));
-//    }
+    public void nextActivity() {
+      startActivity(new Intent(this, MainActivity.class));
+   }
 
     public void showConfirmDialog(final Activity activity, final String[] listPermission) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
